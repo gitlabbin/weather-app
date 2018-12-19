@@ -1,1 +1,1 @@
-grep -c dan healthz.txt
+grep -c healthy healthz.txt
