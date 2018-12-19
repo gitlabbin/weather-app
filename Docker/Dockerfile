@@ -1,7 +1,6 @@
 FROM node:carbon
 WORKDIR /usr/src/app
 USER root
-RUN chmod 777 /usr/src/app/
 COPY . .
 RUN npm install npm@latest -g
 RUN npm cache verify
