@@ -3,7 +3,6 @@ WORKDIR /usr/src/app
 COPY . .
 RUN npm install npm@latest -g
 RUN npm cache verify
-RUN npm install express
-RUN npm install body-parser
+RUN npm i -S express body-parser request
 EXPOSE 8080
 CMD [ "npm", "start" ]
