@@ -1,5 +1,5 @@
 FROM nodejs:6
-WORKDIR /usr/src/app
+#WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install npm@latest -g
 COPY . .
